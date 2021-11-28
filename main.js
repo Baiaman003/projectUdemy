@@ -1,32 +1,16 @@
-"use strict";
+let numberOfFilms = +prompt("Сколко фильмов вы уже посмотрели?");
 
-let numb = 4.6;
-
-console.log(4/0);
-
-console.log('string'*9);
-
-const person = "Alex";
-
-const bool = false;
-
-let und;
-
-console.log(und);
-
-const obj = {
-    name: "Aman",
-    age: 25,
-    isMaried: false
+let personalMoveDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
 };
 
-console.log(obj["name"]);
+let film = prompt("Один из последних фильмов?", '');
+let score = prompt("На сколько оцените?");
 
-const result = confirm("Sure?");
-console.log(result);
+personalMoveDB.movies[film] = score;
 
-const res = prompt("Your age:");
-console.log(typeof(res));
-
-a=5;
-console.log(a);
+console.log(personalMoveDB );
